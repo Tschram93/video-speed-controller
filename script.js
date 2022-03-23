@@ -16,7 +16,10 @@ speed.addEventListener('mousemove', function(e) {
     const min = 0.4;
     const max = 4;
     const height = Math.round(percent * 100) + '%';
+    const playbackRate = percent * (max - min) + min;
     bar.style.height = height;
+    bar.textContent = playbackRate.toFixed(2) + 'x'; 
+    // toFixed(2) Two Decimal places
     console.log(percent)
 }
 );
