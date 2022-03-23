@@ -20,6 +20,6 @@ speed.addEventListener('mousemove', function(e) {
     bar.style.height = height;
     bar.textContent = playbackRate.toFixed(2) + 'x'; 
     // toFixed(2) Two Decimal places
-    console.log(percent)
+    video.playbackRate = playbackRate;
 }
 );
